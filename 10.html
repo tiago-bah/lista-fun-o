@@ -1,0 +1,24 @@
+<script>
+	/*
+    PROBLEMA: CONTAR LETRA
+    Desenvolva uma função que receba uma frase e uma letra e retorne quantas vezes a letra aparece na frase. A função deve ignorar se a letra é maiúscula ou minúscula. Por exemplo, se o usuário informar a frase "Araquari" e a letra "a", o programa deverá retornar o valor 3, pois a letra "a" aparece 3 vezes na frase.
+    *A frase (ou palavra) e a letra devem ser fornecidas pelo usuário.
+    */
+
+	//ENTRADA
+    let palavra = prompt("Digite algo");
+    let letra = prompt("Digite uma letra");
+    //PROCESSAMENTO
+    function contar(p, l) {
+        let texto = p.split("");
+        let c = 0;
+        for (let le of texto) {
+            if (le == l) {
+                c++
+            }       
+        }
+        return c
+    }
+    //SAIDA
+    document.write(`A palavra/frase contem ${contar(palavra, letra)}x a letra ${letra}`)
+</script>

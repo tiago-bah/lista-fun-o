@@ -1,0 +1,19 @@
+<script>
+    /*
+    PROBLEMA: CONVERSÃO PARA FAHRENHEIT
+    Desenvolva um programa em JavaScript que contenha uma função para a conversão de uma temperatura em graus Celsius para Fahrenheit. A fórmula de conversão é a seguinte:
+    F = (9 * C + 160) / 5
+    */
+
+    //ENTRADA
+    let graus = Number(prompt("Digite quantos graus esta"))
+
+    //PROCESSAMENTO
+    function converterF(g) {
+        let f = (9 * g + 160) / 5;
+        return f
+    }
+
+    //SAÍDA
+    document.write(`Esta ${converterF(graus)} fahrenheit`);
+</script>
